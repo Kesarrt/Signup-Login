@@ -1,6 +1,5 @@
 function signup(userName) {
     const users = ["Kesar", "Avni", "Som"];
-
     if (users.includes(userName)) {
         return "User Already Registered, Please Login";
     } else {
@@ -9,5 +8,19 @@ function signup(userName) {
     }
 }
 
-console.log(signup("Kesar"));
-console.log(signup("Khushi"));
+function login(userName, password) {
+    const users = ["Kesar", "Avni", "Som"];
+
+    if (!users.includes(userName)) {
+        return "User Not Found, Please Signup";
+    } else if (password !== "123") {
+        return "Wrong Password";
+    } else {
+        return "Login Successful...";
+    }
+}
+
+
+console.log(login("Kesar", "123"));
+console.log(login("Avni", "wrong"));
+console.log(login("Som", "123"));
