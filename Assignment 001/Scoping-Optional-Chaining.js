@@ -1,10 +1,13 @@
+let x;
+var y;
+
 if (true) {
-  let x = 10;
-  var y = 20;
+  x = 10;
+  y = 20;
 }
 
-console.log(y);
-console.log(x);
+console.log("y:", y); // 20
+console.log("x:", x); // 10
 
 
 const profile = {
@@ -15,17 +18,15 @@ const profile = {
   }
 };
 
-console.log(profile.user?.details?.email);
-console.log(profile.user?.details?.phone);
-
+console.log("Email:", profile.user?.details?.email);
+console.log("Phone:", profile.user?.details?.phone);
 
 const data = {
   product: {
     name: "Laptop",
     company: "HP",
     price: 50000
-
   }
 };
 
-console.log(data.product?.specs?.weight);
+console.log("Weight:", data.product?.specs?.weight);

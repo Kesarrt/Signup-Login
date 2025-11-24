@@ -158,10 +158,12 @@ console.log(arrClone);
 const arrWith100 = [100, ...nums];
 console.log(arrWith100);
 
-// c)
+// c) Merge objects correctly
 const obj1 = { a: 1, b: 2 };
 const obj2 = { b: 3, c: 4 };
+const mergedObj = { ...obj1, ...obj2 };
 console.log(mergedObj);
+
 
 
 // 12. Optional Chaining
